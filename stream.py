@@ -5,7 +5,7 @@
 import io
 import picamera
 import logging
-import socketserver
+import SocketServer as socketserver
 from threading import Condition
 from http import server
 
