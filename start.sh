@@ -1,3 +1,1 @@
-modprobe v4l2_common
-python stream.py $ 
-cd /data
+python3.6 -m main.py 
