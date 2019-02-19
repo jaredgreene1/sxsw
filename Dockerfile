@@ -1,4 +1,4 @@
-FROM balenalib/armv7hf-ubuntu
+FROM balenalib/armv7hf-ubuntu-node
 
 #switch on systemd init system in container
 ENV INITSYSTEM on
