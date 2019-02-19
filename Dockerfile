@@ -15,10 +15,15 @@ RUN sudo apt-get install -y python3.6 python3-pip
 # pip install python deps from requirements.txt
 # For caching until requirements.txt changes
 COPY ./requirements.txt /requirements.txt
-RUN pip3 install -r /requirements.txt
+RUN READTHEDOCS=True pip3 install -r /requirements.txt
 
 COPY . /usr/src/app
-WORKDIR /usr/src/app
+
+WORKDIR /usr/src/app/frontend
+
+RUN npm i
+
+WORKDIR /usr/src/app/frontend
 
 CMD ["bash","start.sh"]
 
