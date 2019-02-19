@@ -1,11 +1,11 @@
-FROM balenalib/armv7hf-ubuntu-node
+FROM balenalib/raspberrypi3-ubuntu-node
 
 #switch on systemd init system in container
 ENV INITSYSTEM on
 
 # install python
 RUN sudo apt-get update
-RUN sudo apt-get install -y software-properties-common 
+RUN sudo apt-get install -y software-properties-common kmod 
 RUN sudo add-apt-repository ppa:deadsnakes/ppa
 RUN sudo apt-get update
 RUN sudo apt-get install -y python3.6 python3-pip

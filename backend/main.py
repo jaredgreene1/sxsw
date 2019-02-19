@@ -1,12 +1,12 @@
+import picamera
+
 from flask import Flask
 
 
-'''
 def take_picture():
     with picamera.PiCamera() as camera:
         camera.capture('/data/image.jpg')
     print('picture taken')
-'''
 
 
 ##################################
@@ -19,7 +19,7 @@ def hello_world():
 
 @app.route('/picture')
 def take_pic():
-  #  take_picture()
+    take_picture()
     return 'Take a Picture!'
 
 app.run(host='0.0.0.0', port=8080)
