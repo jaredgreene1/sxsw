@@ -1,3 +1,4 @@
+modprobe v4l2_common
 cd frontend
 npm start &
 cd ../
