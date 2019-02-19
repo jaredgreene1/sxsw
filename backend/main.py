@@ -5,7 +5,7 @@ from flask import Flask
 
 def take_picture():
     with picamera.PiCamera() as camera:
-        camera.capture('/usr/src/app/frontend/image.jpg')
+        camera.capture('/usr/src/app/frontend/src/image.jpg')
     print('picture taken')
 
 
