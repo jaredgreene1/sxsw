@@ -22,24 +22,10 @@ gp.output(22, True)
 
 def main():
     gp.output(7, False)
-    gp.output(11, False)
-    gp.output(12, True)
-    capture(1)
-
-    gp.output(7, True)
-    gp.output(11, False)
-    gp.output(12, True)
-    capture(2)
-
-    gp.output(7, False)
     gp.output(11, True)
     gp.output(12, False)
     capture(3)
 
-    gp.output(7, True)
-    gp.output(11, True)
-    gp.output(12, False)
-    capture(4)
 
 def capture(cam):
     cmd = "raspistill -o capture_%d.jpg" % cam
@@ -50,4 +36,4 @@ if __name__ == "__main__":
 
     gp.output(7, False)
     gp.output(11, True)
-    gp.output(12, False)
+    gp.output(12, True)
