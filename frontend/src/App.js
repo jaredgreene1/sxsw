@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
-import imA from './imageA.jpg';
-import imB from './imageB.jpg';
-import imD from './imageD.jpg';
+import { Image } from './components/Image.jsx'
+import { Header } from './components/Header.jsx'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <img src={imA} className="App-logo" alt="logo" />
-        <img src={imB} className="App-logo" alt="logo" />
-        <img src={imD} className="App-logo" alt="logo" />
+        <Header /> 
+        <Image imageTitle='imageA.jpg' />
+        <Image imageTitle='imageB.jpg' />
+        <Image imageTitle='imageD.jpg' />
       </div>
     );
   }

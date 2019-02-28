@@ -7,7 +7,7 @@ import camera_control as cam
 
 def take_picture(name):
     with picamera.PiCamera() as camera:
-        camera.capture('/usr/src/app/frontend/src/' + name + '.jpg')
+        camera.capture('/usr/src/app/frontend/public/' + name + '.jpg')
     print('picture taken')
 
 
@@ -18,6 +18,7 @@ app = Flask(__name__)
 @app.route('/')
 def hello_world():
     return 'Hello Pooja Patel!'
+
 
 @app.route('/picture')
 def take_pic():
@@ -32,5 +33,6 @@ def take_pic():
     cam.camD()
     take_picture('imageD')
     return 'Take a Picture!'
+
 
 app.run(host='0.0.0.0', port=8080)
