@@ -24,10 +24,10 @@ def take_pic():
     cam.init()
 
     cam.camA()
-    take_picture('cameraA')
+    take_picture('imageA')
 
     cam.camD()
-    take_picture('cameraD')
+    take_picture('imageD')
     return 'Take a Picture!'
 
 app.run(host='0.0.0.0', port=8080)
