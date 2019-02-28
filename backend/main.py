@@ -25,6 +25,9 @@ def take_pic():
 
     cam.camA()
     take_picture('imageA')
+    
+    cam.camB()
+    take_picture('imageB')
 
     cam.camD()
     take_picture('imageD')
